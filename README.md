@@ -26,11 +26,13 @@ CREATE DATABASE <name>;
 In the project code, locate the database configuration details in the beginning. Update the following parameters with your MySQL connection details:
 
 DATABASE_CONFIG = {
+
     'host': 'localhost',
     'user': 'your_mysql_username',
     'password': 'your_mysql_password',
     'database': 'project_database',
     'port': 3306,  # Change if your MySQL server is running on a different port
+    
 }
 
 ### 6. Run the Project
