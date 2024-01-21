@@ -23,15 +23,15 @@ CREATE DATABASE <name>;
 
 ### 4. Update Database Configuration
 
-In the project code, locate the database configuration details in the beginning. Update the following parameters with your MySQL connection details:
+In the project code, locate the database configuration details in the beginning and update the parameters with your MySQL connection details:
 
-DATABASE_CONFIG = {
+mydb = mysql.connector.connect {
 
     'host': 'localhost',
     'user': 'your_mysql_username',
     'password': 'your_mysql_password',
-    'database': 'project_database',
-    'port': 3306,  # Change if your MySQL server is running on a different port
+    'database': '<database_name>',
+    'port': 3306,  #Change if your MySQL server is running on a different port
     
 }
 
